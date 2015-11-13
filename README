@@ -1,0 +1,13 @@
+= docker-openxpki =
+
+== Simple usage ==
+docker-compose up -d mysql
+(wait until starting up is done)
+./scripts/create_db.sh
+docker-compose up -d
+
+You can access dashboard on http://localhost:8080/openxpki
+
+== Customize certs ==
+
+You can edit scripts/sampleconfig.sh and run docker-compose build before starting up.

@@ -1,0 +1,12 @@
+openxpki:
+  build: .
+  links:
+    - mysql
+  ports:
+    - 8080:80
+  volumes:
+    - ./certs/:/etc/openxpki/ssl/
+mysql:
+  image: mariadb:10
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
