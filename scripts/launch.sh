@@ -11,6 +11,7 @@ then
     echo "WARNING"
     echo "WARNING"
     echo "Do not use default certificate for production"
+    echo "See: http://openxpki.readthedocs.io/en/latest/quickstart.html#setup-base-certificates"
   fi
 fi
 
