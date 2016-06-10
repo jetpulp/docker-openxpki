@@ -10,3 +10,5 @@ mysql:
   image: mariadb:10
   environment:
     - MYSQL_ROOT_PASSWORD=password
+  volumes:
+    - ./dbData:/var/lib/mysql
